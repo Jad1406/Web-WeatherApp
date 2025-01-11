@@ -1,0 +1,93 @@
+.root {
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.root.day {
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+.root.night {
+    background-color: #1e272e;
+    color: #ffffff;
+}
+
+.mainBody {
+    text-align: center;
+}
+
+.toggleButton {
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggleButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.inputContainer {
+    margin: 20px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-right: 10px;
+}
+
+.searchButton {
+    background-color: #00a8ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+    background-color: #005f99;
+}
+
+/* Weather card styles */
+.weatherCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.weatherCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: inherit;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.weatherCard:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+.errorMessage {
+    color: #e84118;
+    margin-top: 20px;
+}
