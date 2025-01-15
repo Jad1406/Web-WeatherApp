@@ -7,7 +7,7 @@ function App() {
   let i=0;
 
   //Initialise the constants and states
-  const apiKey = "eac2c7d2117940a7487ba1237fe0c8bf";
+  const apiKey = process.env.REACT_APP_API_KEY;
   const [apiData, setApiData] = useState(null);
   const [dailyData, setDailyData] = useState([]);
   const [city, setCity] = useState("Beirut");
